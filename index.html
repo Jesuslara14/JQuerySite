@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohrekia.gov</title>
+    <link rel="icon" type="image/x-icon" href="FlagGoofy.png">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="styling.css">  
+</head>
+<body>
+    <ul id="navigation">
+        <li><div class="menuOption">Home</div></li>
+        <li><div class="menuOption">News</div></li>
+        <li><div>Services</div>
+            <ul>
+                <li><div class="menuOption">Police</div></li>
+                <li><div class="menuOption">Military</div></li>
+                <li><div class="menuOption">Suicide Prevention</div></li>
+                <li><div class="menuOption">Potable Water</div></li>
+                <li><div class="menuOption">Complaints</div></li>
+            </ul>
+        </li>
+        <li><div class="menuOption">Citizenship</div></li>
+        <li><div class="menuOption">Pictures</div></li>
+        <li><div class="menuOption">Country Rules</div></li>
+    </ul>
+    <img src="FlagGoofy.png" alt="Flag" id="flag">
+
+
+    <article>
+        <div class="content">
+            <div id="Home">
+            <img src="averagemolessia.png" alt="Average Citizen" style="width: 200px; height: 200px;">'
+            <h2>Welcome to Ohrekia!</h2>
+            <p>
+                Ohrekia is a very good country with a lot of services and other stuff that people keep asking for, 
+                (they won't shut up about it). We no longer have weekly power outages and we invested a small fraction
+                of our reserves into healthcare, you should come visit us and enjoy the most refined lifestyle!
+                <br>
+                <br>
+                We are a very good country, don't be fooled
+            </p>
+            </div>
+
+            <div id="News" style="display: none; height: fit-content;">
+                <p>Date <input type="text" id="datepicker"></p>
+                <h2>Today's News</h2>
+                <div id="accordion" style="width: auto; height: 500px;">
+                    <h3>The best place to live!</h3>
+                    <div>
+                        <p>
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                        </p>
+                    </div>
+                
+                    <h3>Opioid Crisis</h3>
+                    <div>
+                        <p>
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <h3>Ohio invades Mexico</h3>
+                    <div>
+                        <p>
+                            After sucessfullyy singlehandedly taking out Canada, Ohio has now turned it's army of
+                            genetically modified demogorgons down south to Mexico. The threat of invasion is inminent.
+                            The Ohio empire therefore continues to expand, and with no doubt, will take over the entire solar system
+                            within 69 years.
+                        </p>
+                    </div>
+                    <h3>we found out what da dog doin</h3>
+                    <div>
+                        <p>
+                            <img src="butterdog.png" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Pictures" style="display: none;">
+               <h1>Cute pics from Ohrekia</h1>
+                <div id="imageContainer">
+                    <div class="image" style="background-image: url('badcityompg.png')"></div>
+                    <div class="image" style="background-image: url('depressedcity.png')"></div>
+                    <div class="image" style="background-image: url('accurateohrekia.png')"></div>
+                    <div class="image" style="background-image: url('ohiopicutre.png')"></div>
+                    <div class="image" style="background-image: url('photoallery.png')"></div>
+                    <div class="image" style="background-image: url('bearoso.png')"></div>
+                    <div class="image" style="background-image: url('gru.png')"></div>
+                    <div class="image" style="background-image: url('badomg.png')"></div>
+                    <div class="image" style="background-image: url('terribleplace.png')"></div>
+                </div>
+                
+            </div>
+
+            <div id="Citizenship" style="display: none;">
+                <h1>Ohrekia has 42 Million subscribers
+                    <br>
+                You should become one of our honorable citizens!</h1>
+
+                <a href="#" title="Average non ohrekian citizen"><img src="averagenonmolessia.png" style="height: 300px; width: 300px;"></a>
+                <a href="#" title="Average Ohrekian Enjoyer"><img src="averagemolessia.png" style="height: 300px; width: 300px;"></a>
+
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>APply Now!</legend>
+                            <label for="nameInput">What's your name?</label> <br>
+                            <input type="text" id="nameInput"> <br> <br>
+                            <label for="ageInput">What's your years?</label> <br>
+                            <input type="number" id="ageInput"> <br> <br>
+                            <label for="childInput">How much childrens do you have?</label> <br>
+                            <input type="number" id="childInput"> <br> <br>
+                            
+                            <div id="progressbar"></div>
+                        </fieldset>
+                    </form><button id="buttonIncrease">Increase Progress for free!</button>
+                </div>
+            </div>
+        </div> 
+    </article>
+
+    <footer>
+        El estupido se sienta en el avion, como si estuviera en su propia casa <br>
+        All rights reserved to the Ohrekian Government. <br>
+        Violation of guidelines will result in severe punishment.
+    </footer>
+
+<script>
+    var progress = 0;
+
+    $(function(){
+        $("#navigation").menu();
+    });
+ 
+    $(function(){
+        $("#datepicker").datepicker();
+    }); 
+
+    $(function(){
+        $("#accordion").accordion();
+    });
+
+    $(".menuOption").click(function(event){
+        $(".content").children().css("display", "none");
+        $("#" + event.currentTarget.innerHTML).css("display", "block");
+    });
+
+    $(function(){
+        $(".image").on("mouseenter", function(event){
+            event.currentTarget.style.scale = "200%";
+            event.currentTarget.style.zIndex = "2";
+        });
+        $(".image").on("mouseleave", function(event){
+            event.currentTarget.style.scale = "100%";
+            event.currentTarget.style.zIndex = "0";
+        });
+    });
+
+    $(function(){
+        $( document ).tooltip();
+    });
+
+    $(function(){
+        $("#progressbar").progressbar({
+            value: progress
+        });
+    });
+
+    $(function(){
+        $("#buttonIncrease").on("click", function(){
+            progress++;
+            $("#progressbar").progressbar({
+            value: progress
+        });
+        });
+    });
+</script>
+</body>
+</html>
